@@ -1,10 +1,10 @@
 function checkPalindroneString(str){
-    let name = str;
+    let original = str;
     let reverse = ""
     for(let i = str.length-1;i>=0;i--){
       reverse = reverse + str[i]
     }
-    if(name === reverse){
+    if(original === reverse){
         console.log("Yes,This is Palindrone")
     }else{
         console.log("No,This is not a Palindrone")
