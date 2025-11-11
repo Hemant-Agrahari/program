@@ -25,3 +25,23 @@ function checkPalindroneStr(str) {
 
 checkPalindroneStr("hemant");
 checkPalindroneStr("madam");
+
+
+Original: "A man, a plan, a canal: Panama"
+Reversed:  "amanaplanacanalpanama"
+
+
+function isPalindrome(str) {
+  // Remove all non-alphanumeric characters and convert to lowercase
+  const cleaned = str.replace(/[^a-z0-9]/gi, '').toLowerCase();
+
+  // Compare cleaned string with its reverse
+  return cleaned === cleaned.split('').reverse().join('');
+}
+
+// Example usage:
+console.log(isPalindrome("A man, a plan, a canal: Panama")); // true
+console.log(isPalindrome("race a car")); // false
+console.log(isPalindrome("No lemon, no melon")); // true
+
+
