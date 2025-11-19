@@ -28,3 +28,11 @@ function printMinMax(arr) {
 }
 
 console.log(printMinMax([1, 12, 3, 4, 5]));
+
+
+// Using Set (Simple & Best for Interviews)
+function removeDuplicatesUsingSet(arr) {
+  return [...new Set(arr)];
+}
+
+console.log(removeDuplicatesUsingSet([0,0,1,1,1,2,2,3,3,4]));
